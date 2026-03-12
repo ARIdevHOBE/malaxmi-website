@@ -145,10 +145,10 @@ p {
 }
 
 .nav-logo img {
-  height: 72px;
-  width: 72px;
-  object-fit: cover;
-  border-radius: 50%;
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
   border: 2px solid var(--gold);
   box-shadow: 0 2px 12px rgba(201, 169, 110, 0.25);
   background: var(--white);
@@ -157,7 +157,7 @@ p {
 }
 
 .nav-logo:hover img {
-  transform: scale(1.08);
+  transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(201, 169, 110, 0.4);
 }
 
@@ -1089,10 +1089,10 @@ p {
 }
 
 .footer-brand .footer-logo img {
-  height: 80px;
-  width: 80px;
-  object-fit: cover;
-  border-radius: 50%;
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
   border: 2px solid var(--gold);
   box-shadow: 0 2px 16px rgba(201, 169, 110, 0.3);
   background: var(--white);
