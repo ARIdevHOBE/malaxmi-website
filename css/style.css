@@ -73,7 +73,9 @@ body {
 }
 
 @keyframes pageLoad {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 a {
@@ -88,18 +90,33 @@ img {
   display: block;
 }
 
-ul { list-style: none; }
+ul {
+  list-style: none;
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1.2;
   color: var(--charcoal);
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
-h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
-h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); }
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+}
 
 p {
   font-size: 1rem;
@@ -145,14 +162,14 @@ p {
 }
 
 .nav-logo img {
-  height: auto;
-  width: 130px;
+  height: 75px;
+  width: auto;
   object-fit: contain;
-  border-radius: 14px;
-  border: 1.5px solid var(--gold);
-  box-shadow: 0 2px 12px rgba(201, 169, 110, 0.2);
-  background: var(--white);
+  border-radius: 12px;
+  border: 3px solid var(--gold);
+  box-shadow: 0 3px 15px rgba(201, 169, 110, 0.35);
   padding: 5px;
+  background: var(--white);
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
@@ -257,12 +274,10 @@ p {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(44, 44, 44, 0.65) 0%,
-    rgba(44, 44, 44, 0.35) 50%,
-    rgba(44, 44, 44, 0.55) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(44, 44, 44, 0.65) 0%,
+      rgba(44, 44, 44, 0.35) 50%,
+      rgba(44, 44, 44, 0.55) 100%);
   z-index: 1;
 }
 
@@ -336,8 +351,13 @@ p {
 }
 
 @keyframes scrollDown {
-  0% { top: -100%; }
-  100% { top: 100%; }
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 100%;
+  }
 }
 
 /* ===== BUTTONS ===== */
@@ -472,7 +492,7 @@ p {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal.visible {
@@ -484,7 +504,7 @@ p {
   opacity: 0;
   transform: translateX(-40px);
   transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal-left.visible {
@@ -496,7 +516,7 @@ p {
   opacity: 0;
   transform: translateX(40px);
   transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal-right.visible {
@@ -508,7 +528,7 @@ p {
   opacity: 0;
   transform: scale(0.95);
   transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal-scale.visible {
@@ -517,12 +537,29 @@ p {
 }
 
 /* Stagger delays */
-.delay-1 { transition-delay: 0.1s; }
-.delay-2 { transition-delay: 0.2s; }
-.delay-3 { transition-delay: 0.3s; }
-.delay-4 { transition-delay: 0.4s; }
-.delay-5 { transition-delay: 0.5s; }
-.delay-6 { transition-delay: 0.6s; }
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.delay-5 {
+  transition-delay: 0.5s;
+}
+
+.delay-6 {
+  transition-delay: 0.6s;
+}
 
 /* ===== SERVICES CARDS ===== */
 .services-grid {
@@ -874,7 +911,7 @@ p {
   margin-bottom: var(--gap-lg);
 }
 
-.contact-info > p {
+.contact-info>p {
   margin-bottom: var(--gap-xl);
 }
 
@@ -1089,14 +1126,14 @@ p {
 }
 
 .footer-brand .footer-logo img {
-  height: auto;
-  width: 140px;
+  height: 85px;
+  width: auto;
   object-fit: contain;
-  border-radius: 14px;
-  border: 1.5px solid var(--gold);
-  box-shadow: 0 2px 16px rgba(201, 169, 110, 0.3);
-  background: var(--white);
+  border-radius: 12px;
+  border: 3px solid var(--gold);
+  box-shadow: 0 3px 15px rgba(201, 169, 110, 0.35);
   padding: 5px;
+  background: var(--white);
 }
 
 .footer-brand p {
